@@ -1,0 +1,24 @@
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+{{ if or .Params.math .Site.Params.math }}
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+{{ end }}
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+/>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<!-- or -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+
+<!--style> p{text-align: justify;} td{vertical-align: top;}</style-->
+<div style="display: none">\(\require{mathtools}\)</div>
+
+<style>.simplebar-scrollbar::before {background-color: #999999;}</style>
