@@ -1,4 +1,4 @@
-baseURL: '/'
+baseURL: 'https://semantictree.io'
 languageCode: en-us
 title: Semantic Tree
 theme: PaperMod
