@@ -1,0 +1,79 @@
+baseURL: 'https://MikeLilley.github.io/'
+languageCode: en-us
+title: Semantic Tree
+theme: PaperMod
+params:
+  showShareButtons: false
+  defaultTheme: light
+  disableScrollToTop: true
+  UseHugoToc: true
+  showtoc: true
+  TocOpen: false
+  env: production
+  homeInfoParams:
+    Title: About
+    Content: >
+      - My name is Michael Lilley. 
+      This website is meant to serve as a digital CV as well as a place where I can write about mathematics, computer science, and statistics. I am currently employed as a machine vision engineer at [USS Vision, Inc.](https://www.ussvision.com/) in Livonia, Michigan, 
+      where we build bespoke real-time machine vision inspection systems for manufacturing plants.
+
+      -
+
+      - Furthermore, I partake in research with the [Affective Computing and Multimodal Systems Lab](https://umdearborn.edu/cecs/departments/computer-and-information-science/laboratories) 
+      at the [University of Michigan - Dearborn](https://umdearborn.edu/). I am also a graduate of this university with degrees in mathematics and computer science. Presently, I am most interested in topics surrounding neuro-symbolic AI, automated theorem proving, and computer algebra systems.
+
+      -
+
+      - To contact me, please send an email to [michael.brandon.lilley@protonmail.com](michael.brandon.lilley@protonmail.com).
+
+
+  math: true
+
+  socialIcons:
+  - name: github
+    title: GitHub
+    url: "https://github.com/MikeLilley"
+  - name: stackoverflow
+    title: Stack Overflow
+    url: "https://stackoverflow.com/users/22663758/michael-lilley"
+  - name: linkedin
+    title: LinkedIn
+    url: "https://www.linkedin.com/in/michael-lilley-303936163/"
+
+  fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+taxonomies:
+  tag: tags
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+menu:
+  main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: cv
+      name: CV
+      url: /cv/
+      weight: 30
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
