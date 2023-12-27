@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>natural-language-processing on Semantic Tree</title>
+    <link>https://MikeLilley.github.io/tags/natural-language-processing/</link>
+    <description>Recent content in natural-language-processing on Semantic Tree</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 28 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://MikeLilley.github.io/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Topic Modeling in Embedding Spaces</title>
+      <link>https://MikeLilley.github.io/posts/topic_modeling_embedding_spaces/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/posts/topic_modeling_embedding_spaces/</guid>
+      <description>In this post, we will be going over the paper Topic Modeling in Embedding Spaces by Dieng et al., with an extended explanation of the background content.</description>
+    </item>
+    
+  </channel>
+</rss>

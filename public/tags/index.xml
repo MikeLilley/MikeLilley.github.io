@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Semantic Tree</title>
+    <link>https://MikeLilley.github.io/tags/</link>
+    <description>Recent content in Tags on Semantic Tree</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 08 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://MikeLilley.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>linear-algebra</title>
+      <link>https://MikeLilley.github.io/tags/linear-algebra/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/linear-algebra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>physics</title>
+      <link>https://MikeLilley.github.io/tags/physics/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/physics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tensors</title>
+      <link>https://MikeLilley.github.io/tags/tensors/</link>
+      <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/tensors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algebraic-topology</title>
+      <link>https://MikeLilley.github.io/tags/algebraic-topology/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/algebraic-topology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>homology</title>
+      <link>https://MikeLilley.github.io/tags/homology/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/homology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>simplicial-complex</title>
+      <link>https://MikeLilley.github.io/tags/simplicial-complex/</link>
+      <pubDate>Wed, 07 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/simplicial-complex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>algebraic-geometry</title>
+      <link>https://MikeLilley.github.io/tags/algebraic-geometry/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/algebraic-geometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>constraint-satisfaction</title>
+      <link>https://MikeLilley.github.io/tags/constraint-satisfaction/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/constraint-satisfaction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gröbner-bases</title>
+      <link>https://MikeLilley.github.io/tags/gr%C3%B6bner-bases/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/gr%C3%B6bner-bases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>natural-language-processing</title>
+      <link>https://MikeLilley.github.io/tags/natural-language-processing/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/natural-language-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>https://MikeLilley.github.io/tags/statistics/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>topic-modeling</title>
+      <link>https://MikeLilley.github.io/tags/topic-modeling/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/topic-modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>word-embeddings</title>
+      <link>https://MikeLilley.github.io/tags/word-embeddings/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://MikeLilley.github.io/tags/word-embeddings/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
