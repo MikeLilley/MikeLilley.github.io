@@ -135,13 +135,13 @@ $$f(x) = (x-1)(x + 1)^2 = x^3 + x^2 - x + 1\$$
 
 <p>If we were to divide this polynomial with the divisors \(x + 1\) and \(x - 1,\) we would have to perform the division algorithm twice, which is computationally expensive as opposed to just dealing with multiple divisors in one pass of the algorithm. Doing this in multiple variables might be somewhat unintuitive at first; we will define the algorithm, go through some examples, then describe caveats which arise when compared to the single-variable case.</p>
 
-<center><img style="max-width:600px; width:auto;" src="../post_assets/ideal_csp/algorithm.png" alt="Algorithm"></img></center>
+<center><img style="max-width:500px; width:100%;" src="../post_assets/ideal_csp/algorithm.png" alt="Algorithm"></img></center>
 
 <p>Let's now go through an example to demonstrate this algorithm being applied.</p>
 
 ><p><b>Example 3.7:</b> Let \(f = x^2y + xy^2 + y^2\) and let our divisors be \(f_1 = xy - 1\) and \(f_2 = y^2 - 1.\) Since we label \(xy-1\) with \(f_1,\) we will denote that as our first divisor.</p>
 >
-><center><img style="max-width:600px; width:auto;" src="../post_assets/ideal_csp/division.png" alt="Algorithm"></img></center>
+><center><img style="max-width:500px; width:100%;" src="../post_assets/ideal_csp/division.png" alt="Algorithm"></img></center>
 
 <p>We saw in the single-variable case that the Euclidean algorithm gave us a generator \(g\) for our ideal, and we were able to test if a polynomial \(f\) was a member of an ideal or not by dividing \(f\) by \(g\) and seeing if \(f/g\) had a remainder. Unfortunately, this test is not as straightforward with many variables. We note that if after following division, we find that \(f = q_1 g_1 + \cdots + q_s g_s,\) then obviously \(f \in \langle f_1, \cdots, f_s \rangle.\) However, as we’ll see next, this is not a requirement. Consider computing division as we do above with the divisors in a different order.</p>
 
