@@ -75,7 +75,7 @@ title: "Curriculum Vitae"
 <li><p style="margin:0;"><b>Location:</b> Dearborn, MI, USA</p></li>
 <li><p style="margin:0;"><b>Dates of Attendance</b>: September 2017 - August 2021</p></li>
 <li><p style="margin:0;"><b>GPA:</b> 3.56</p></li>
-<li><p style="margin:0;"><b>Mathematics Coursework:</b> Calculus I-III, Differential Equations, Introduction to Mathematical Proofs, Introduction to Linear Algebra, Advanced Linear Algebra, Number Theory, Cryptography, Abstract Algebra, Probability and Statistics, Topology, Numerical Analysis, Introduction to Real Analysis, Differential Geometry, Algebraic Geometry</p></li>
+<li><p style="margin:0;"><b>Mathematics Coursework:</b> Calculus I-III, Differential Equations, Introduction to Mathematical Proofs, Introduction to Linear Algebra, Advanced Linear Algebra, Number Theory, Cryptography, Abstract Algebra, Probability and Statistics, Topology, Numerical Analysis, Real Analysis, Differential Geometry, Algebraic Geometry</p></li>
 <li><p><b>Computer Science Coursework:</b> Software Engineering, Data Structures and Algorithms, Algorithm Analysis and Design, Artificial Intelligence, Computational Learning, Computer Organization and Assembly Language, Natural Language Processing, Web Technology, Operating Systems, Computer Networking and Distributed Processes, Computer Vision</p></li>
 </ul>
 
