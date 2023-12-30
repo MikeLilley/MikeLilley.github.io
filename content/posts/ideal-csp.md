@@ -342,11 +342,18 @@ $$C_1 = \mathbb{V}(\langle A, B \rangle) \cup \mathbb{V}(\langle A - 1, B - 1 \r
 $$C_2 = \mathbb{V}(\langle A - 1, C \rangle) \cup \mathbb{V}(\langle A, C - 1 \rangle)$$
 $$C_1 \cup C_2 = \mathbb{V}(\langle A, B \rangle) \cup \mathbb{V}(\langle A - 1, B - 1 \rangle) \cup \mathbb{V}(\langle A - 1, C \rangle) \cup \mathbb{V}(\langle A, C - 1 \rangle)$$
 </div>
-<p>To figure out if this is solvable, we have to determine if: </p>
+<p>To figure out if this is solveable, we have to determine if \(1\) is in the the ideal: </p>
 
+<div data-simplebar>
+$$ \langle A, B \rangle \cap \langle A - 1, B - 1 \rangle \cap \langle A - 1, C \rangle \cap \langle A, C - 1 \rangle $$
+</div>
 
-<div data-simplebar style="border:1px solid; border-color: #777777;">
-<pre style="margin:20px">
+<p>Our Singular program and output will be as follows:</p>
+
+<pre class="source-code">
+<code class="source-code-wrapper">
+<div data-simplebar>
+<div class="source-code-content singular">
 &gt; ring r = (ZZ/2)[A, B, C];
 &gt; ideal i1 = A, B;
 &gt; ideal i2 = A - 1, B - 1;
@@ -357,8 +364,13 @@ $$C_1 \cup C_2 = \mathbb{V}(\langle A, B \rangle) \cup \mathbb{V}(\langle A - 1,
 _[1]=AB+AC+BC+B
 _[2]=A2+A
 _[3]=AC2+BC2+AC+BC
-_[4]=B2C2+B2C+BC2+BC</pre>
+_[4]=B2C2+B2C+BC2+BC
 </div>
+</div>
+</code>
+</pre>
+
+<p>Since \(1\) is not contained in the Gröbner basis, we know that the CSP has a solution.</p>
 
 ### The *n*-Queens Problem
 <p>This is a classic problem in computer science education, typically introduced in a student’s first algorithms class when teaching the method of backtracking to solve CSPs. It can be stated as follows: Given an \(n\times n\) chessboard, can we place \(n\) queens in such a way that they cannot attack each other? For those who are reading this who do not play chess, a queen can attack another piece if it is directly horizontal, diagonal, or vertical from the location of the queen on the board.</p>
@@ -442,17 +454,19 @@ $$\bigcap_{C_k \in C} \mathbb{V} (I_{i,j}) \cap \mathbb{V} (P_i) \cap \mathbb{V}
 
 <p>Again, we compute the Gröbner basis using Singular, although this time we only show a portion of the code, as the entire program and output is quite long. We operate over the field \(\mathbb{Q}\) for this.</p>
 
-<div data-simplebar style="border:1px solid; border-color: #777777;">
-<pre style="margin:20px">
-ring r = QQ,(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16), dp;
+<pre class="source-code">
+<code class="source-code-wrapper">
+<div data-simplebar>
+<div class="source-code-content singular">
+> ring r = QQ,(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16), dp;
 > ideal d1 = a1*(a1-1);
->   //domain polynomials 2-15 here
+> //domain polynomials 2-15 here
 > ideal d16 = a16*(a16-1);
 > ideal i0 = a1, a6;
 > ideal j0 = a1 - 1, a6;
 > ideal k0 = a1, a6 - 1;
 > ideal m0 = intersect(i0, j0, k0) + d1 + d6;
->   //terms 1-74 here
+> //terms 1-74 here
 > ideal i75 = a15, a16;
 > ideal j75 = a15 - 1, a16;
 > ideal k75 = a15, a16 - 1;
@@ -468,9 +482,13 @@ _[5]=a12*a16
 _[92]=a1*a3
 _[93]=a2^2-a2
 _[94]=a1*a2
-_[95]=a1^2-a1</pre></div>
+_[95]=a1^2-a1
+</div>
+</div>
+</code>
+</pre>
 
-<center><p>Since there aren't constant basis elements, the 4-queens problem has a solution.</p></center>
+<p>Since there aren't constant basis elements, the \(4\)-queens problem has a solution.</p>
 
 ### The Vertex Cover Problem
 
@@ -489,8 +507,10 @@ $$(a_5 - 1)(a_8 - 1) + (a_7 - 1)(a_8 - 1) $$
 
 <p>Just like before, we can split this into a sum of intersections and compute using Singular:</p>
 
-<div data-simplebar style="border:1px solid; border-color: #777777;">
-<pre style="margin:20px">
+<pre class="source-code">
+<code class="source-code-wrapper">
+<div data-simplebar>
+<div class="source-code-content singular">
 > ring r = QQ,(a1, a2, a3, a4, a5, a6,a7,a8),dp;
 > //Domain Polynomials
 > ideal d1 = a1*(a1-1);
@@ -515,7 +535,11 @@ _[5]=a2-1
 _[6]=a1+a2+a3+a4+a5+a6+a7+a8-4
 _[7]=a8^2-a8
 _[8]=a7*a8-a7-a8+1
-_[9]=a7^2-a7</pre></div>
+_[9]=a7^2-a7
+</div>
+</div>
+</code>
+</pre>
 
 <p>There are no constants which implies that this CSP is satisfiable. If we instead attempted to cover the graph with two vertices rather than four by changing <code>ideal m9 = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 - 4;</code> to the statement <code>ideal m9 = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 - 2;</code>, we get a basis of just one element, <code>_[1]=1</code>. This implies that it is impossible to cover our graph with only two vertices, rendering the CSP unsatisfiable.</p>
 

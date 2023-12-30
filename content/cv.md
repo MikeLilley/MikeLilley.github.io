@@ -12,7 +12,7 @@ title: "Curriculum Vitae"
 ### USS Vision, Inc.
 <p style="margin:0;"><b>Position:</b> Machine Vision Engineer</p>
 <p style="margin:0;"><b>Location:</b> Livonia, MI, USA</p>
-<p><b>Dates of Employment</b>: September 2021 - Present</p>
+<p style="margin:0;"><b>Dates of Employment</b>: September 2021 - Present</p>
 <ul>
     <li><p>Create bespoke real-time machine vision software in Python and C++ deployed on Linux devices for automatic defect detection during various manufacturing processes.</p></li>
     <ul style="margin:0;">
@@ -21,8 +21,8 @@ title: "Curriculum Vitae"
         <li><p>Participated in the creation of custom software for Matrox Iris GTX cameras, adding the capability to load in arbitrary custom ONNX model files to use for inference. </p></li>
     </ul>
     <li><p>Create custom machine learning architectures centered on high-performance, both in accuracy and speed. </p></li>
-    <li><p>Employ tools such as OpenCV, Scikit-Image, PyTorch, TensorFlow, and Scikit-Learn for image processing, data analysis, machine learning, and anomaly detection.</p></li>
-    <li><p>Use Docker, Kubernetes, and Apache Kafka for container orchistration and inter-process communication.</p></li>
+    <li><p>Employ tools such as OpenCV, Scikit-Image, PyTorch, and Scikit-Learn for image processing, data analysis, machine learning, and anomaly detection.</p></li>
+    <li><p>Use Docker and Kubernetes for container orchistration, as well as ZeroMQ for inter-process and distributed communication.</p></li>
     <li><p>Parallelize data pipelines across many CPU cores and high-bandwidth distributed systems, as well as deploy on Nvidia hardware for accelerated processing capabilities.</p></li>
     <li><p>Deploy and manage SQL databases and web servers for KPI records.</p></li>
     <li><p>Interface with industrial hardware such as GigE cameras and programmable logic controllers.</p></li>
@@ -32,19 +32,19 @@ title: "Curriculum Vitae"
 
 
 ### University of Michigan - Dearborn
-<p style="margin:0;"><b>Position:</b> Research Assistant, Tutor</p>
+<p style="margin:0;"><b>Position:</b> Research Assistant (1), Tutor (2)</p>
 <p style="margin:0;"><b>Location:</b> Dearborn, MI, USA</p>
-<p><b>Dates of Employment</b>: October 2020 - Present (RA), March 2018 - April 2021 (Tutor)</p>
+<p style="margin:0;"><b>Dates of Employment</b>: October 2020 - December 2022 (1), March 2018 - April 2021 (2)</p>
 <ul>
-    <li><p>Led a project which studied the application of concepts from computational topology to the problem of facial region segmentation, with our results later being published in IEEE ISM 2022; traveled solo to and gave a talk at the conference in Naples, Italy. (RA)</p></li>
-    <li><p>Used US congessional voting records to study graphical games in the context of game theory. Constructed and ran experiments to determine overall model fitness, analyzed the effects that pruning certain inputs had on the model, and determined if the behavior of a particular agent was better described by one model or another. (RA)</p></li>
-    <li><p>Regularly met with other students to assist them with coursework. Tutored up to 400-level mathematics and computer science courses, as well as general physics. (Tutor)</p></li>
+    <li><p>Led a project which studied the application of concepts from computational topology to the problem of facial region segmentation, with our results later being published in IEEE ISM 2022; traveled solo to and gave a talk at the conference in Naples, Italy. (1)</p></li>
+    <li><p>Used US congessional voting records to study graphical games in the context of game theory. Constructed and ran experiments to determine overall model fitness, analyzed the effects that pruning certain inputs had on the model, and determined if the behavior of a particular agent was better described by one model or another. (1)</p></li>
+    <li><p>Regularly met with other students to assist them with coursework. Tutored up to 400-level mathematics and computer science courses, as well as introductory physics. (2)</p></li>
 </ul>
 
 ### Woolf Aircraft Products, Inc.
 <p style="margin:0;"><b>Position:</b> Mechanical Drafter (Summer Internship)</p>
 <p style="margin:0;"><b>Location:</b> Romulus, MI, USA</p>
-<p><b>Dates of Employment</b>: May 2017 - August 2017</p>
+<p style="margin:0;"><b>Dates of Employment</b>: May 2017 - August 2017</p>
 <ul>
     <li><p>Detailed tubing layouts in AutoCAD and Autodesk Inventor.</p></li>
     <li><p>Inspected and pressure-tested components after being fabricated.</p></li>
@@ -53,8 +53,7 @@ title: "Curriculum Vitae"
 ### EnviroSolutions, Inc.
 <p style="margin:0;"><b>Position:</b> Civil Drafter (Year-Long Co-Op)</p>
 <p style="margin:0;"><b>Location:</b> Westland, MI, USA</p>
-
-<p><b>Dates of Employment</b>: June 2016 - May 2017</p>
+<p style="margin:0;"><b>Dates of Employment</b>: June 2016 - May 2017</p>
 <ul>
     <li><p>Detailed contour, plume, and analytical maps in AutoCAD to convey contamination in the groundwater and soil of Superfund sites.</p></li>
 </ul>
@@ -91,7 +90,7 @@ title: "Curriculum Vitae"
 ## Technical Skills
 <p style="margin:0;"><b>Programming Languages:</b> 
 <ul>
-    <li>Python, C++, C, JavaScript, SQL, HTML/CSS, LaTeX, Markdown, Prolog, Common LISP, Haskell</li>
+    <li>Python, C++, C, SQL, HTML/CSS, JavaScript, LaTeX, Markdown, Prolog</li>
 </ul> 
 
 <p style="margin:0;"><b>Technologies and Software Libraries:</b> 

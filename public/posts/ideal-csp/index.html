@@ -11,8 +11,6 @@
 <meta name="author" content="Michael Lilley">
 <link rel="canonical" href="https://MikeLilley.github.io/posts/ideal-csp/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.3613efbd0b1772781e8f49935e973cae632a7f61471c05b17be155505ccf87b5.css" integrity="sha256-NhPvvQsXcngej0mTXpc8rmMqf2FHHAWxe&#43;FVUFzPh7U=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
-    onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://MikeLilley.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://MikeLilley.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://MikeLilley.github.io/favicon-32x32.png">
@@ -35,28 +33,27 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
-
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
-/>
 <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
 
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+<div style="display: none;">\(\require{mathtools}\)</div>
 
+<link href="/prism.css" rel="stylesheet" />
+<script src="/prism.js" data-manual></script>
 
-<div style="display: none">\(\require{mathtools}\)</div>
+<style>
+.simplebar-scrollbar::before {background-color: #999999;}
+pre.source-code .simplebar-track.simplebar-horizontal {bottom: 20px;}
+pre.source-code {margin-bottom: -10px;}
+pre.source-code div[data-simplebar] {margin-bottom: -65px; margin-top: -65px;}
+pre.source-code .source-code-wrapper {overflow-x: visible;}
 
-<style>.simplebar-scrollbar::before {background-color: #999999;}</style>
-<meta property="og:title" content="Ideal Membership and Constraint Satisfaction Problems" />
+</style>
+
+<script src="/SyntaxHighlighting.js"></script><meta property="og:title" content="Ideal Membership and Constraint Satisfaction Problems" />
 <meta property="og:description" content="We will be describing the application of the ideal membership problem (IMP) and Gröbner bases to the problem of deciding constraint satisfaction problems (CSPs). We will begin with an exposition of the IMP in one variable, then demonstrate how extending our methods to arbitrarily finite variables naturally leads to the construction of Gröbner bases. Following this, we will introduce CSPs, show how the IMP can be used to solve the graph coloring problem, then construct a general framework for translating CSPs into IMPs, following which we will compute Gröbner bases to determine ideal membership." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://MikeLilley.github.io/posts/ideal-csp/" />
@@ -487,9 +484,15 @@ $$C_1 = \mathbb{V}(\langle A, B \rangle) \cup \mathbb{V}(\langle A - 1, B - 1 \r
 $$C_2 = \mathbb{V}(\langle A - 1, C \rangle) \cup \mathbb{V}(\langle A, C - 1 \rangle)$$
 $$C_1 \cup C_2 = \mathbb{V}(\langle A, B \rangle) \cup \mathbb{V}(\langle A - 1, B - 1 \rangle) \cup \mathbb{V}(\langle A - 1, C \rangle) \cup \mathbb{V}(\langle A, C - 1 \rangle)$$
 </div>
-<p>To figure out if this is solvable, we have to determine if: </p>
-<div data-simplebar style="border:1px solid; border-color: #777777;">
-<pre style="margin:20px">
+<p>To figure out if this is solveable, we have to determine if \(1\) is in the the ideal: </p>
+<div data-simplebar>
+$$ \langle A, B \rangle \cap \langle A - 1, B - 1 \rangle \cap \langle A - 1, C \rangle \cap \langle A, C - 1 \rangle $$
+</div>
+<p>Our Singular program and output will be as follows:</p>
+<pre class="source-code">
+<code class="source-code-wrapper">
+<div data-simplebar>
+<div class="source-code-content singular">
 &gt; ring r = (ZZ/2)[A, B, C];
 &gt; ideal i1 = A, B;
 &gt; ideal i2 = A - 1, B - 1;
@@ -500,8 +503,12 @@ $$C_1 \cup C_2 = \mathbb{V}(\langle A, B \rangle) \cup \mathbb{V}(\langle A - 1,
 _[1]=AB+AC+BC+B
 _[2]=A2+A
 _[3]=AC2+BC2+AC+BC
-_[4]=B2C2+B2C+BC2+BC</pre>
+_[4]=B2C2+B2C+BC2+BC
 </div>
+</div>
+</code>
+</pre>
+<p>Since \(1\) is not contained in the Gröbner basis, we know that the CSP has a solution.</p>
 <h3 id="the-n-queens-problem">The <em>n</em>-Queens Problem<a hidden class="anchor" aria-hidden="true" href="#the-n-queens-problem">#</a></h3>
 <p>This is a classic problem in computer science education, typically introduced in a student’s first algorithms class when teaching the method of backtracking to solve CSPs. It can be stated as follows: Given an \(n\times n\) chessboard, can we place \(n\) queens in such a way that they cannot attack each other? For those who are reading this who do not play chess, a queen can attack another piece if it is directly horizontal, diagonal, or vertical from the location of the queen on the board.</p>
 <center><img src="../post_assets/ideal_csp/chess_queens.png" alt="Chess Queens"></img></center>
@@ -566,17 +573,19 @@ $$I_{i,j} = \langle a_i, a_j \rangle \cap \langle a_i - 1, a_j \rangle \cap \lan
 $$\bigcap_{C_k \in C} \mathbb{V} (I_{i,j}) \cap \mathbb{V} (P_i) \cap \mathbb{V} (P_j) = \mathbb{V} \Bigg ( \sum_{C_k \in C} C_k\Bigg ) $$
 </div>
 <p>Again, we compute the Gröbner basis using Singular, although this time we only show a portion of the code, as the entire program and output is quite long. We operate over the field \(\mathbb{Q}\) for this.</p>
-<div data-simplebar style="border:1px solid; border-color: #777777;">
-<pre style="margin:20px">
-ring r = QQ,(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16), dp;
+<pre class="source-code">
+<code class="source-code-wrapper">
+<div data-simplebar>
+<div class="source-code-content singular">
+> ring r = QQ,(a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11, a12, a13, a14, a15, a16), dp;
 > ideal d1 = a1*(a1-1);
->   //domain polynomials 2-15 here
+> //domain polynomials 2-15 here
 > ideal d16 = a16*(a16-1);
 > ideal i0 = a1, a6;
 > ideal j0 = a1 - 1, a6;
 > ideal k0 = a1, a6 - 1;
 > ideal m0 = intersect(i0, j0, k0) + d1 + d6;
->   //terms 1-74 here
+> //terms 1-74 here
 > ideal i75 = a15, a16;
 > ideal j75 = a15 - 1, a16;
 > ideal k75 = a15, a16 - 1;
@@ -592,8 +601,12 @@ _[5]=a12*a16
 _[92]=a1*a3
 _[93]=a2^2-a2
 _[94]=a1*a2
-_[95]=a1^2-a1</pre></div>
-<center><p>Since there aren't constant basis elements, the 4-queens problem has a solution.</p></center>
+_[95]=a1^2-a1
+</div>
+</div>
+</code>
+</pre>
+<p>Since there aren't constant basis elements, the \(4\)-queens problem has a solution.</p>
 <h3 id="the-vertex-cover-problem">The Vertex Cover Problem<a hidden class="anchor" aria-hidden="true" href="#the-vertex-cover-problem">#</a></h3>
 <p>The vertex covering problem is another important problem in computer science, particular when it comes to the notion of simplification and reduction. It may be stated as follows: <i>Given some graph \(G\)</span>, can we pick \(k \in \mathbb{N}\)</span> nodes such that every edge in the graph is incident to at least one of our selected nodes?</i></p>
 <center><img src="../post_assets/ideal_csp/graph.png"></img></center>
@@ -605,8 +618,10 @@ $$(a_3 - 1)(a_4 - 1) + (a_3 - 1)(a_5 - 1) + (a_5 - 1)(a_7 - 1) + $$
 $$(a_5 - 1)(a_8 - 1) + (a_7 - 1)(a_8 - 1) $$
 </div>
 <p>Just like before, we can split this into a sum of intersections and compute using Singular:</p>
-<div data-simplebar style="border:1px solid; border-color: #777777;">
-<pre style="margin:20px">
+<pre class="source-code">
+<code class="source-code-wrapper">
+<div data-simplebar>
+<div class="source-code-content singular">
 > ring r = QQ,(a1, a2, a3, a4, a5, a6,a7,a8),dp;
 > //Domain Polynomials
 > ideal d1 = a1*(a1-1);
@@ -631,7 +646,11 @@ _[5]=a2-1
 _[6]=a1+a2+a3+a4+a5+a6+a7+a8-4
 _[7]=a8^2-a8
 _[8]=a7*a8-a7-a8+1
-_[9]=a7^2-a7</pre></div>
+_[9]=a7^2-a7
+</div>
+</div>
+</code>
+</pre>
 <p>There are no constants which implies that this CSP is satisfiable. If we instead attempted to cover the graph with two vertices rather than four by changing <code>ideal m9 = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 - 4;</code> to the statement <code>ideal m9 = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 - 2;</code>, we get a basis of just one element, <code>_[1]=1</code>. This implies that it is impossible to cover our graph with only two vertices, rendering the CSP unsatisfiable.</p>
 <hr>
 <h2 id="computational-complexity">Computational Complexity<a hidden class="anchor" aria-hidden="true" href="#computational-complexity">#</a></h2>

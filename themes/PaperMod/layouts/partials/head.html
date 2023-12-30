@@ -89,7 +89,7 @@
 {{- end }}
 {{- end -}}
 
-{{- /* Highlight.js */}}
+<!-- {{- /* Highlight.js */}}
 {{- $isHLJSdisabled := (site.Params.assets.disableHLJS | default .Params.disableHLJS ) }}
 {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (not $isHLJSdisabled)) }}
 {{- if not site.Params.assets.disableFingerprinting }}
@@ -100,7 +100,7 @@
 {{- $highlight := slice (resources.Get "js/highlight.min.js") | resources.Concat "assets/js/highlight.js" }}
 <script defer crossorigin="anonymous" src="{{ $highlight.RelPermalink }}" onload="hljs.initHighlightingOnLoad();"></script>
 {{- end }}
-{{- end }}
+{{- end }} -->
 
 {{- /* Favicons */}}
 <link rel="icon" href="{{ site.Params.assets.favicon | default "favicon.ico" | absURL }}">

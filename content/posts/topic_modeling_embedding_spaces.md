@@ -127,7 +127,7 @@ $$\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)} t^{\alpha+\beta-1}$
 <p> We will now introduce the multivariate generalization of the beta distribution.</p>
 
 ><p><b>Definition 1.4:</b> The <i>Dirichlet distribution</i> is a probability distribution defined as:</p>
->$$f(x_1,\cdots, x_k; \alpha_1, \cdots, \alpha_k) = \frac{1}{B(\alpha)} \prod_{i=1}^K x_i^{\alpha_k - 1}$$
+><div data-simplebar>$$f(x_1,\cdots, x_k; \alpha_1, \cdots, \alpha_k) = \frac{1}{B(\alpha)} \prod_{i=1}^K x_i^{\alpha_k - 1}$$</div>
 ><p>where \(\alpha = [\alpha_1, \cdots, \alpha_k] ,\) \(\sum_{i=0}^K x_i = 1,\) and \(\alpha_k > 0\) for all \(k.\)</p>
 
 <p>Notice that if \(K = 2\) and \(x_1 = 1 - x_2 ,\) this reduces to the beta distribution. To account for more variables, we extend the definition of the beta function as follows:</p>
@@ -188,7 +188,7 @@ $$ f(k,n,p) = \binom{n}{k} p^k(1-p)^{n-k} $$
 <div data-simplebar>$$\theta \sim Dir(\alpha), \qquad \theta = [\theta_1, \cdots, \theta_k], \qquad \sum_{i = 1}^k \theta_i = 1, \qquad p(\theta|\alpha) \propto \prod_{j=1}^k \theta_j^{\alpha_j - 1}$$</div>
 <p>Now, consider grabbing some data from the categorical distribution parameterized by \(\theta.\) \( D = \lbrace x_1, \cdots x_n \rbrace \sim  Cat(\theta) \) where \( x_i \in \lbrace 1, \cdots, k\rbrace.\)</p>
 
-$$p(D|\theta) = \prod_{i=1}^n P(X_i = x_i|\theta) = \prod_{i=1}^n \theta_{x_i}$$
+<div data-simplebar>$$p(D|\theta) = \prod_{i=1}^n P(X_i = x_i|\theta) = \prod_{i=1}^n \theta_{x_i}$$</div>
 
 <p>Since \(\theta_{x_i} = \prod_{j=1}^{k}  \theta_j^{\mathbb{I}(x_i = j)}\) we can rewrite this as:</p>
 
@@ -303,8 +303,10 @@ $$\mbox{Jane} \overset{has}{\longrightarrow} \mbox{eyes} \overset{is}{\longright
 $$\mbox{Mary} \overset{has}{\longrightarrow} \mbox{eyes} \overset{is}{\longrightarrow} \mbox{brown}$$
 $$\mbox{John} \overset{has}{\longrightarrow} \mbox{eyes} \overset{is}{\longrightarrow} \mbox{green}$$
 
-<div data-simplebar style="border:1px solid; border-color: #777777;">
-<pre style="margin:20px">
+<pre class="source-code">
+<code class="source-code-wrapper" style="background: #404040!important;">
+<div data-simplebar>
+<div class="source-code-content prolog">
 human(jane).
 human(mary).
 human(john).
@@ -313,11 +315,12 @@ eye_color(mary, brown).
 eye_color(john, green).
 ?- human(X), eye_color(X, brown), human(Y), eye_color(Y, brown), X \= Y.
 X = jane, Y = mary;
-</pre>
 </div>
+</div>
+</code>
+</pre>
 
-
-<p style="text-align: center; margin-top: 5px"><i>Prolog code which describes such a semantic network.</i></p>
+<p style="text-align: center; margin-top: -5px"><i>Prolog code which describes such a semantic network.</i></p>
 
 <p>Assuming that <i>Jane</i>, <i>Mary</i>, and <i>John</i> are connected to <i>human</i> by a <i>is-a</i> relationship, we could say that the abstract node human can have green or brown eyes, and quantify that there exists at least two humans with brown eyes, and at least one with green eyes. This kind of relationship is very natural to us, as we tend to think of a word as a symbolic link to something else. However, semantic networks are not without their downsides:</p>
 <ul>
