@@ -40,7 +40,6 @@
 <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
 
 <div style="display: none;">\(\require{mathtools}\)</div>
-
 <link href="/prism.css" rel="stylesheet" />
 <script src="/prism.js" data-manual></script>
 
@@ -440,7 +439,7 @@ $$ f^m \in \langle f_1, \cdots, f_s \rangle $$
 <p>We can now illustrate the use of this theorem with an example.</p>
 <blockquote>
 <p><b>Example 5.9: </b>Consider the complete graph \(G = K_3,\) given by the triangle of three vertices all mutually connected to one another:</p>
-<center><img src="../post_assets/ideal_csp/k3_graph.png" alt="K3 Graph"></img></center>
+<center><img style="max-width:600px; width:100%;" src="../post_assets/ideal_csp/k3_graph.png" alt="K3 Graph"></img></center>
 <p>We may define our graph polynomial as \(f_G = (x - z)(y - z)(x - y).\) If we choose to 3-color this graph, we may define our ideal as \(I_3 = \langle x^3 - 1, y^3 - 1, z^3 - 1 \rangle.\) None of the defining polynomials in \(I\) divide \(f_G\) which implies that \(f_G \not \in I_3\) so we may say that this graph is 3-colorable. If instead we try to 2-color this graph, our ideal is \(I_2 = \langle x^2 - 1, y^2 - 1, z^2 - 1 \rangle.\) \(x^2 - 1\) divides our graph polynomial, so this implies that \(f_G \in I_2,\) and thus cannot be 2-colored.</p>
 </blockquote>
 <p>So, we just showed how the graph coloring problem could be framed as an ideal membership problem in the sense that the answer to if a particular graph \(G\) could be \(k\)-colored was determined based on if its graph polynomial \(f_G\) was a member of a particular ideal. However, we did not describe why we decided to frame the problem this way, or if there’s a more general framework to translate CSPs into IMPs. </p>
@@ -511,11 +510,11 @@ _[4]=B2C2+B2C+BC2+BC
 <p>Since \(1\) is not contained in the Gröbner basis, we know that the CSP has a solution.</p>
 <h3 id="the-n-queens-problem">The <em>n</em>-Queens Problem<a hidden class="anchor" aria-hidden="true" href="#the-n-queens-problem">#</a></h3>
 <p>This is a classic problem in computer science education, typically introduced in a student’s first algorithms class when teaching the method of backtracking to solve CSPs. It can be stated as follows: Given an \(n\times n\) chessboard, can we place \(n\) queens in such a way that they cannot attack each other? For those who are reading this who do not play chess, a queen can attack another piece if it is directly horizontal, diagonal, or vertical from the location of the queen on the board.</p>
-<center><img src="../post_assets/ideal_csp/chess_queens.png" alt="Chess Queens"></img></center>
+<center><img style="max-width:400px; width:100%;" src="../post_assets/ideal_csp/chess_queens.png" alt="Chess Queens"></img></center>
 <p>In order to formulate this into a CSP, we will need to create polynomials which will be zero if and only if two queens are not attacking each other. As we’ll see shortly, this is quite a laborious task, and requires 19 different polynomials for the \(4 \times 4\) case.</p>
 <p>To start, we let each square be a separate variable, so in the \(4\times 4\) case, we will have 16 variables. Similar to the prior example, our elements can take on values in the finite field \(\mathbb{Z}_2\); a square will be 0 if no queen is present, and 1 if a queen is present. We will make a polynomial for each row, column, and diagonal. This polynomial should have a value greater than zero if and only if two or more queens exist on a particular attacking line.</p>
 <p>In order to construct these polynomials, we will sum the monomials formed from all possible ways of multiplying two variables on an attacking line. For the vertical, horizontal, and main diagonal attacking lines, we will have \({4\choose 2} = 6\) terms. The way we assign variables to our squares will be as follows:</p>
-<center><img src="../post_assets/ideal_csp/chess_labeled.png" alt="Chess Labeled"></img></center>
+<center><img style="max-width:400px; width:100%;" src="../post_assets/ideal_csp/chess_labeled.png" alt="Chess Labeled"></img></center>
 <p>Our polynomials will be as follows:</p>
 <div data-simplebar>
 \[
@@ -609,7 +608,7 @@ _[95]=a1^2-a1
 <p>Since there aren't constant basis elements, the \(4\)-queens problem has a solution.</p>
 <h3 id="the-vertex-cover-problem">The Vertex Cover Problem<a hidden class="anchor" aria-hidden="true" href="#the-vertex-cover-problem">#</a></h3>
 <p>The vertex covering problem is another important problem in computer science, particular when it comes to the notion of simplification and reduction. It may be stated as follows: <i>Given some graph \(G\)</span>, can we pick \(k \in \mathbb{N}\)</span> nodes such that every edge in the graph is incident to at least one of our selected nodes?</i></p>
-<center><img src="../post_assets/ideal_csp/graph.png"></img></center>
+<center><img style="max-width:550px; width:100%;" src="../post_assets/ideal_csp/graph.png"></img></center>
 <p>In the case of this graph, \(S = \lbrace a_2, a_3, a_5, a_7 \rbrace\)</span> would be a vertex cover. To translate this into the language of ideals, we will once more operate in \(\mathbb{Q}.\)</p>
 <p>Since any edge is incident to two nodes \(a_i, a_j,\) we will say that to cover an edge, either \(a_i = 1\) or \(a_j = 1\) for each edge. For our graph above, this translates into the polynomial:</p> 
 <div data-simplebar>

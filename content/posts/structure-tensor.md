@@ -89,7 +89,7 @@ cover:
 
 <p>A common procedure to perform when working in a vector space is a <i>change of basis</i>. As the name suggests, this is a procedure in which we change the representation of a given vector space \(V \) by means of constructing a different set of basis vectors. Understanding how multilinear transformations (and their notational representations) transform under a change of basis is key to understanding how to apply them in other coordinate systems. To motivate these transforms, consider the following example:</p>
 
-><p> <b>Example 4.1:</b> Consider the vector space \(\mathbb{R}^2 ,\) represented by the standard basis vectors. If we expand the vector \(A = \begin{bmatrix} 2 \\ 4 \end{bmatrix} \) into its coefficients and basis vectors, we have:</p>
+><p> <b>Example 3.1:</b> Consider the vector space \(\mathbb{R}^2 ,\) represented by the standard basis vectors. If we expand the vector \(A = \begin{bmatrix} 2 \\ 4 \end{bmatrix} \) into its coefficients and basis vectors, we have:</p>
 >
 >$$A = a_1 \hat{i} + a_2\hat{j} = 2 \begin{bmatrix} 1 \\\ 0 \end{bmatrix} + 4 \begin{bmatrix} 0 \\\ 1 \end{bmatrix} $$
 >
@@ -119,8 +119,8 @@ $$A = \sum_{i}a^iB_i = a^1 \hat{i} + a^2\hat{j} $$
 
 <p>There are many important tensors that are used in the mathematical sciences; one such example is the Cauchy Stress Tensor, found in continuum mechanics. This tensor describes the stress at any point in a solid object, and has components that transform contravariantly. While representative of an object in three dimensions, the tensor has nine values. One might reason that we only need three values corresponding to the stresses in the \(x ,\) \(y ,\) and \(z \) directions, but physical stress does not adhere to standard vector addition rules; if I push on a box using the same force from two opposite sides, the total stress on the box is not zero.</p>
 
-<center><img style="width:80%" src="../post_assets/structure_tensor/tensor_cover.png"></img></center>
-<p style="text-align: center; margin-top: -25px"><i><b>Figure 3.1:</b> The Cauchy Stress Tensor; Adapted From <a href="https://commons.wikimedia.org/wiki/File:Components_stress_tensor.svg">Sanpaz</a></i></p></i></p>
+<center><img style="max-width:550px; width:100%;" src="../post_assets/structure_tensor/tensor_cover.png"></img></center>
+<p style="text-align: center;"><i><b>Figure 4.1:</b> The Cauchy Stress Tensor; Adapted From <a href="https://commons.wikimedia.org/wiki/File:Components_stress_tensor.svg">Sanpaz</a></i></p></i></p>
 
 <p>To model stress at a point, we aim to describe the three-dimensional stress an object could undergo at each of its faces. To treat this in a semi-formal manner, consider splitting our object into small cubes, with one such cube denoted by the tuple \( C = (s_{x,1}, s_{x,2}, s_{y,1}, s_{y,2}, s_{z,1}, s_{z,2}) \) where \(s_{x,1} \) and \(s_{x,2}\) are stresses on directly opposite faces perpendicular to the x-axis, and the face area denoted by \(\Delta A .\) By physical experimentation, it has been found that: </p>
 

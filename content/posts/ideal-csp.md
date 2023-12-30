@@ -274,7 +274,7 @@ $$C_j = \bigtimes_{1 \leq i \leq n} D_x$$
 
 ><p><b>Example 5.9: </b>Consider the complete graph \(G = K_3,\) given by the triangle of three vertices all mutually connected to one another:</p>
 >
-><center><img src="../post_assets/ideal_csp/k3_graph.png" alt="K3 Graph"></img></center>
+><center><img style="max-width:600px; width:100%;" src="../post_assets/ideal_csp/k3_graph.png" alt="K3 Graph"></img></center>
 >
 ><p>We may define our graph polynomial as \(f_G = (x - z)(y - z)(x - y).\) If we choose to 3-color this graph, we may define our ideal as \(I_3 = \langle x^3 - 1, y^3 - 1, z^3 - 1 \rangle.\) None of the defining polynomials in \(I\) divide \(f_G\) which implies that \(f_G \not \in I_3\) so we may say that this graph is 3-colorable. If instead we try to 2-color this graph, our ideal is \(I_2 = \langle x^2 - 1, y^2 - 1, z^2 - 1 \rangle.\) \(x^2 - 1\) divides our graph polynomial, so this implies that \(f_G \in I_2,\) and thus cannot be 2-colored.</p>
 
@@ -374,7 +374,7 @@ _[4]=B2C2+B2C+BC2+BC
 
 ### The *n*-Queens Problem
 <p>This is a classic problem in computer science education, typically introduced in a student’s first algorithms class when teaching the method of backtracking to solve CSPs. It can be stated as follows: Given an \(n\times n\) chessboard, can we place \(n\) queens in such a way that they cannot attack each other? For those who are reading this who do not play chess, a queen can attack another piece if it is directly horizontal, diagonal, or vertical from the location of the queen on the board.</p>
-<center><img src="../post_assets/ideal_csp/chess_queens.png" alt="Chess Queens"></img></center>
+<center><img style="max-width:400px; width:100%;" src="../post_assets/ideal_csp/chess_queens.png" alt="Chess Queens"></img></center>
 
 <p>In order to formulate this into a CSP, we will need to create polynomials which will be zero if and only if two queens are not attacking each other. As we’ll see shortly, this is quite a laborious task, and requires 19 different polynomials for the \(4 \times 4\) case.</p>
 
@@ -382,7 +382,7 @@ _[4]=B2C2+B2C+BC2+BC
 
 <p>In order to construct these polynomials, we will sum the monomials formed from all possible ways of multiplying two variables on an attacking line. For the vertical, horizontal, and main diagonal attacking lines, we will have \({4\choose 2} = 6\) terms. The way we assign variables to our squares will be as follows:</p>
 
-<center><img src="../post_assets/ideal_csp/chess_labeled.png" alt="Chess Labeled"></img></center>
+<center><img style="max-width:400px; width:100%;" src="../post_assets/ideal_csp/chess_labeled.png" alt="Chess Labeled"></img></center>
 
 <p>Our polynomials will be as follows:</p>
 
@@ -493,7 +493,7 @@ _[95]=a1^2-a1
 ### The Vertex Cover Problem
 
 <p>The vertex covering problem is another important problem in computer science, particular when it comes to the notion of simplification and reduction. It may be stated as follows: <i>Given some graph \(G\)</span>, can we pick \(k \in \mathbb{N}\)</span> nodes such that every edge in the graph is incident to at least one of our selected nodes?</i></p>
-<center><img src="../post_assets/ideal_csp/graph.png"></img></center>
+<center><img style="max-width:550px; width:100%;" src="../post_assets/ideal_csp/graph.png"></img></center>
 
 <p>In the case of this graph, \(S = \lbrace a_2, a_3, a_5, a_7 \rbrace\)</span> would be a vertex cover. To translate this into the language of ideals, we will once more operate in \(\mathbb{Q}.\)</p>
 

@@ -118,7 +118,7 @@ $$\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)} t^{\alpha+\beta-1}$
 <p>Tweaking the values of \(\alpha\) and \(\beta\) causes the beta distribution to take on different shapes. When both parameters are below 1 and equal, the graph resembles a U-shape, implying that the majority of the probability mass is present near the upper and lower limits of the sample space. When \(\alpha\) is larger than \(\beta\) or vice-versa, the majority of the mass is present near only one of the limits. When both limits are larger than 1, the mass is present towards the center of the sample space, resembling a bell curve.</p>
 
 <center>
-<img src="../post_assets/topic_modeling/beta_graphs.png">
+<img style="max-width:650px; width:100%;" src="../post_assets/topic_modeling/beta_graphs.png">
 </center>
 <p style="text-align: center; margin-top: 20px"><i><b>Figure 1.3:</b> A Beta Distribution with Various \(\alpha\) and \(\beta\) Parameters</i></p>
 
@@ -222,7 +222,7 @@ $$\prod_{i=1}^{k} \theta_i^{c_i} \prod_{j=1}^k \theta_j^{\alpha_j - 1} \mathbb{I
 ### Mixture Models
 
 <center>
-<img src="../post_assets/topic_modeling/Cluster.png">
+<img style="max-width:400px; width:100%;" src="../post_assets/topic_modeling/Cluster.png">
 </center>
 <p style="text-align: center; margin-top: 20px"><i><b>Figure 3.1:</b> Clusters That Could Be Represented by a Gaussian Mixture Model</i></p>
 

@@ -57,8 +57,8 @@ Before we go any further, we must state some definitions.
 
 ><p><b>Definition 3.1:</b> The <i>graph topology</i> \(T\) is the topological space which arises from a normal graph \(G = (V,E)\) by replacing each vertex \(v \in V\) by a point in \(\mathbb{R}\) and each edge \(e \in E\) by a copy of the unit interval \(I = [0,1].\) </p>
 
-<center><img src="../post_assets/simplicial_homology/diagram-20230704.png"></img></center>
-<p style="text-align: center; margin-top: -25px"><i><b>Figure 3.2:</b> A Three-Node Graph </i></p>
+<center><img style="max-width:350px; width:100%;" src="../post_assets/simplicial_homology/diagram-20230704.png"></img></center>
+<p style="text-align: center;"><i><b>Figure 3.2:</b> A Three-Node Graph </i></p>
 
 <p>Let \(G\) be the directed graph illustrated in Figure 3.2 with the graph topology. We will denote the set \(V^* \subseteq T\) as the labeled copies of the unit intervals which correspond to each edge in \(G,\) as well as the set \(E^* \subseteq T\) as the points in \(T\) which correspond to the vertices of \(G.\)</p>
 
@@ -190,8 +190,8 @@ r \begin{bmatrix}
 
 <p>We say that \(S\) forms a \(k\)-plane if its elements are <i>affinely independent</i>. Affine independence is when the set of \(k\) vectors \(u_i - u_0\) where \(i = \lbrace 0, \ 1, \ 2, \cdots, \ k \rbrace\) are linearly independent. \(L\) would be a 1-plane in \(\mathbb{R}^2.\) Since we can have \(d\) linearly independent vectors in \(\mathbb{R}^d,\) we can have \(d+1\) affinely independent points.</p>
 
-<center><img src="../post_assets/simplicial_homology/Simplicial_complex.png"></img></center>
-<p style="text-align: center; margin-top: -10px"><i><b>Figure 4.1:</b> A Simplicial Complex; Adapted From <a href="https://commons.wikimedia.org/wiki/File:Simplicial_complex_example.svg">cflm</a></i></p>
+<center><img img style="width:100%;" src="../post_assets/simplicial_homology/Simplicial_complex.png"></img></center>
+<p style="text-align: center;"><i><b>Figure 4.1:</b> A Simplicial Complex; Adapted From <a href="https://commons.wikimedia.org/wiki/File:Simplicial_complex_example.svg">cflm</a></i></p>
 
 <p>Now we will introduce the principal definitions of this section.</p>
 
@@ -209,8 +209,8 @@ r \begin{bmatrix}
 
 ><p><b>Definition 4.8:</b> A <i>\(j\)-skeleton</i> is a subcomplex of \(K\) whose elements comprise simplicies of dimension \(j\) or less. For example, the 0-skeleton of a simplicial complex \(K\) would be its vertex set.</p>
 
-<center><img style="width:75%" src="../post_assets/simplicial_homology/Torus-triange.png"></img></center>
-<p style="text-align: center; margin-top: -10px"><i><b>Figure 4.9:</b> A Triangulated Torus; Adapted From <a href="https://commons.wikimedia.org/wiki/File:Torus-triang.png">Ag2gaeh</a></i></p>
+<center><img img style="max-width:600px; width:100%;" src="../post_assets/simplicial_homology/Torus-triange.png"></img></center>
+<p style="text-align: center;"><i><b>Figure 4.9:</b> A Triangulated Torus; Adapted From <a href="https://commons.wikimedia.org/wiki/File:Torus-triang.png">Ag2gaeh</a></i></p>
 
 ---
 

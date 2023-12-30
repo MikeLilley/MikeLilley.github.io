@@ -40,7 +40,6 @@
 <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
 
 <div style="display: none;">\(\require{mathtools}\)</div>
-
 <link href="/prism.css" rel="stylesheet" />
 <script src="/prism.js" data-manual></script>
 
@@ -319,7 +318,7 @@ $$\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha + \beta)} t^{\alpha+\beta-1}$
 <div data-simplebar>$$ f(x; \alpha; \beta) = \frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)} x^{\alpha - 1}(1-x)^{\beta - 1}$$</div>
 <p>Tweaking the values of \(\alpha\) and \(\beta\) causes the beta distribution to take on different shapes. When both parameters are below 1 and equal, the graph resembles a U-shape, implying that the majority of the probability mass is present near the upper and lower limits of the sample space. When \(\alpha\) is larger than \(\beta\) or vice-versa, the majority of the mass is present near only one of the limits. When both limits are larger than 1, the mass is present towards the center of the sample space, resembling a bell curve.</p>
 <center>
-<img src="../post_assets/topic_modeling/beta_graphs.png">
+<img style="max-width:650px; width:100%;" src="../post_assets/topic_modeling/beta_graphs.png">
 </center>
 <p style="text-align: center; margin-top: 20px"><i><b>Figure 1.3:</b> A Beta Distribution with Various \(\alpha\) and \(\beta\) Parameters</i></p>
 <h3 id="the-dirichlet-distribution">The Dirichlet Distribution<a hidden class="anchor" aria-hidden="true" href="#the-dirichlet-distribution">#</a></h3>
@@ -391,7 +390,7 @@ $$p(D|\theta) = \prod_{i=1}^n\prod_{j=1}^{k}  \theta_j^{\mathbb{I}(x_i = j)} = \
 <p>The goal of LDA is to be a statistical model which sets up a structure relating words to latent variables (topics) with the ability to learn relationships based on data while maintaining the categorical distributions described above. The reason why LDA employs the Dirichlet distribution is to be able to perform Bayesian inference with the categorical distribution as a prior and posterior. LDA is a hierarchical model; in particular, a mixture model. We will first provide the intuition for mixture models then provide a definition below.</p>
 <h3 id="mixture-models">Mixture Models<a hidden class="anchor" aria-hidden="true" href="#mixture-models">#</a></h3>
 <center>
-<img src="../post_assets/topic_modeling/Cluster.png">
+<img style="max-width:400px; width:100%;" src="../post_assets/topic_modeling/Cluster.png">
 </center>
 <p style="text-align: center; margin-top: 20px"><i><b>Figure 3.1:</b> Clusters That Could Be Represented by a Gaussian Mixture Model</i></p>
 <p>Consider the problem of clustering a set of data. In this case, we're given a set of data, and are assuming that clusters exist within it. These clusters would be considered our latent variables. Following the clustering performed in the above image, it can be inferred that the data contained in each cluster adheres to a Gaussian distribution with respect to that particular cluster.</p>
