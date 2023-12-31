@@ -5,7 +5,7 @@ theme: PaperMod
 params:
   showShareButtons: false
   defaultTheme: light
-  disableScrollToTop: false
+  disableScrollToTop: true
   UseHugoToc: true
   showtoc: true
   TocOpen: false
