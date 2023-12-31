@@ -37,7 +37,7 @@ Led the software development of a system that visually inspects for various type
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<script>MathJax = {loader: {load: ['ui/lazy']}, options: {lazyMargin: '200px', lazyAlwaysTypeset: null}};</script>
+<script>MathJax = {loader: {load: ['ui/lazy']}, options: {lazyMargin: '1000px', lazyAlwaysTypeset: null}};</script>
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -331,6 +331,11 @@ Led the software development of a system that visually inspects for various type
         | Favicon by <a href="https://www.flaticon.com/free-icon/technology_519178">Dreamstale</a>
     </span>
 </footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
 
 <script>
     let menu = document.getElementById('menu')
@@ -359,6 +364,19 @@ Led the software development of a system that visually inspects for various type
             }
         });
     });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
 
 </script>
 <script>
