@@ -1,0 +1,38 @@
+{
+    "Semantic Tree":
+    {
+        "Simplicial Homology Cover": "/../posts/simplicial_homology/resources/Torus-triangle.svg",
+        "A Primer on Tensors Cover": "/../posts/structure_tensor/resources/tensor.svg"
+    },
+
+    "A Primer on Tensors | Semantic Tree":
+    {
+        "tensor": "/../posts/structure_tensor/resources/tensor.svg"
+    },
+
+    "Simplicial Homology | Semantic Tree":
+    {
+        "homotopy": "/../posts/simplicial_homology/resources/homotopy.svg",
+        "graph": "/../posts/simplicial_homology/resources/graph.svg",
+        "simplicial_complex": "/../posts/simplicial_homology/resources/Simplicial_complex.svg",
+        "torus": "/../posts/simplicial_homology/resources/Torus-triangle.svg"
+    },
+
+    "Ideal Membership and Constraint Satisfaction Problems | Semantic Tree":
+    {
+        "graph": "path/to/your_first_svg.svg",
+        "algorithm": "path/to/your_first_svg.svg",
+        "division": "path/to/your_second_svg.svg",
+        "k3_graph": "path/to/your_second_svg.svg",
+        "chess_queens": "path/to/your_second_svg.svg",
+        "chess_labeled": "path/to/your_second_svg.svg"
+    },
+
+    "Topic Modeling in Embedding Spaces | Semantic Tree":
+    {
+        "beta_graphs": "path/to/your_first_svg.svg",
+        "dirchlet": "path/to/your_second_svg.svg",
+        "cluster": "path/to/your_second_svg.svg"
+    }
+    
+}

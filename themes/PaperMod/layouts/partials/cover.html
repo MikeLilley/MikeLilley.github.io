@@ -30,7 +30,8 @@
     {{- else }}{{/* For absolute urls and external links, no img processing here */}}
         {{- if $addLink }}<a href="{{ (.Params.cover.image) | absURL }}" target="_blank"
             rel="noopener noreferrer">{{ end -}}
-            <img loading="lazy" src="{{ (.Params.cover.image) | absURL }}" alt="{{ $alt }}">
+            <!-- <img loading="lazy" src="{{ (.Params.cover.image) | absURL }}" alt="{{ $alt }}">  Commented out as we want SVGs -->
+            <svg id="{{(.Params.title)}} Cover"></svg>
     {{- end }}
     {{- if $addLink }}</a>{{ end -}}
     {{/*  Display Caption  */}}

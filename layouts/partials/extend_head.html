@@ -1,8 +1,4 @@
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.svg">
 <link rel="manifest" href="/site.webmanifest">
 
 <script>MathJax = {loader: {load: ['ui/lazy']}, options: {lazyMargin: '1000px', lazyAlwaysTypeset: null}};</script>
@@ -14,8 +10,10 @@
 <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
 
 <div style="display: none;">\(\require{mathtools}\)</div>
-<link href="/prism.css" rel="stylesheet" />
-<script src="/prism.js" data-manual></script>
+
+<link href="/syntax_highlighting/prism.css" rel="stylesheet"/>
+<script src="/syntax_highlighting/prism.js" data-manual></script>
+<script src="/syntax_highlighting/SyntaxHighlighting.js"></script>
 
 <style>
 .simplebar-scrollbar::before {background-color: #999999;}
@@ -25,4 +23,5 @@ pre.source-code div[data-simplebar] {margin-bottom: -65px; margin-top: -65px;}
 pre.source-code .source-code-wrapper {overflow-x: visible;}
 </style>
 
-<script src="/SyntaxHighlighting.js"></script>
+<link href="/svg_handler/svg_colors.css" rel="stylesheet"/>
+<script src="/svg_handler/svg_manager.js"></script>
