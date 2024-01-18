@@ -36,12 +36,14 @@ class Spline
         svgPath.setAttribute('d', this.pathObj.toString());
         return svgPath;
     }
-    sample_points_from_path(samples=100)
+    sample_points_from_path(samples=300)
     {
-        var svgPath = this.generate_svg()
-        return [...Array(samples)].map((_, i) => {
+        var svgPath = this.generate_svg();
+        var sampledPoints = [...Array(samples)].map((_, i) => {
         const point = svgPath.getPointAtLength((this.length * i) / samples);
         return { x: point.x, y: point.y };});
+        sampledPoints.push(this.control_points[this.control_points.length - 1]);
+        return sampledPoints;
     }
 }
 
@@ -49,16 +51,31 @@ class SplineGroup
 {
     constructor(splines = [])
     {
+        splines.forEach((spline, index) => {
+            spline.spline_id = index;  // Assigning spline_id to each spline
+
+            // Now, iterate through each control point in the spline
+            spline.control_points.forEach(controlPoint => {
+                // Add the spline_id to each control point
+                controlPoint.spline_id = spline.spline_id;
+            });
+        });
+
         this.splines = splines.reduce((acc, spline) => {
             const key = spline.boundary ? 'boundary' : 'interior';
             acc[key] = acc[key] || [];
             acc[key].push(spline);
             return acc;}, {});
 
+
+        
+        console.log(this.splines);
+
         this.endpoints = this.get_endpoints(splines);
         console.log(this.endpoints);
         this.boundary_points = this.merge_points(this.splines['boundary']);
         this.convex_hull = d3.polygonHull(this.boundary_points.map(p => [p.x, p.y]));
+        console.log(this.convex_hull);
         this.quadtree = d3.quadtree().x(d => d.x).y(d => d.y).addAll(this.boundary_points);
     }
 
@@ -117,7 +134,24 @@ class HomotopyGraphic extends Graphic
         this.spline_group = spline_group;
         this.drag_object = this.create_drag_object();
         this.graphic = {'splines': this.append_splines(), 'circles': this.append_circles()};
+        this.append_convex_hull();
+        // this.append_sampled_points();
         console.log(this.spline_group);
+    }
+
+    append_sampled_points() {
+        var allSplines = Object.values(this.spline_group.splines).flat();
+        
+        allSplines.forEach(spline => {
+            spline.sampled_points.forEach(point => {
+                this.svg.append('circle')
+                    .attr('cx', point.x)
+                    .attr('cy', point.y)
+                    .attr('r', 3) // Radius of the point
+                    .attr('fill', 'black') // Color of the point
+                    
+            });
+        });
     }
 
     append_circles()
@@ -126,7 +160,7 @@ class HomotopyGraphic extends Graphic
 
         for (const spline of splines) 
         {
-            for(const point of spline.control_points)
+            spline.control_points.forEach((point, index) =>
             {
                 if(point.fixed == false)
                 {
@@ -136,10 +170,12 @@ class HomotopyGraphic extends Graphic
                     .attr('cx', point.x)
                     .attr('cy', point.y)
                     .attr('fill', 'red')
+                    .attr('spline_id', spline.spline_id)
+                    .attr('point_id', index)
                     .attr('class', 'draggable') // Assign a class for hover styling
                     .call(this.drag_object); // Apply the drag behavior to only the dynamic points
                 }
-            }
+            })
         }
 
         // for(const point of spline.)
@@ -161,31 +197,50 @@ class HomotopyGraphic extends Graphic
             .attr('stroke', 'blue')
             .attr('stroke-dasharray', ('5, 5')) // Dashed line for the dynamic spline
             .attr('stroke-width', 5)
+            .attr('spline_id', spline.spline_id)
             .attr('d', d3.line().x(d => d.x).y(d => d.y).curve(d3.curveCatmullRom.alpha(alpha)))
             .attr('class', spline.boundary ? 'boundary-spline' : 'variable-spline'));
         }
 
         return svg_splines;
     }
+
+    append_convex_hull() {
+        const hullPoints = this.spline_group.convex_hull.map(d => d.join(",")).join(" ");
+        this.svg.append("clipPath")
+        .attr("id", "clip-path-for-splines")
+        .append("polygon")
+        .attr("points", hullPoints);}
     
-    create_drag_object() 
-    {
+    create_drag_object() {
         const that = this; // Capture 'this' to access the class instance
-        const drag = d3.drag().on('drag', function(event, d) 
-        {
-            if (!d.fixed) 
-            {
+        const clipPathId = "clip-path-for-splines";
+        const drag = d3.drag().on('drag', function(event, d) {
+            if (!d.fixed) {
                 let point = { x: event.x, y: event.y };
 
-                if(!d3.polygonContains(that.spline_group.convex_hull, [point.x, point.y])) 
-                {
+                // Check if the point is inside the convex hull
+                if (!d3.polygonContains(that.spline_group.convex_hull, [point.x, point.y])) {
                     point = that.spline_group.quadtree.find(event.x, event.y, Infinity);
-                } 
+                }
 
+                // Update the point position
                 d.x = point.x;
                 d.y = point.y;
+                d3.select(this).attr('cx', d.x).attr('cy', d.y);
 
-                d3.select(this).attr('cx', d.x).attr('cy', d.y); // 'this' refers to the DOM element
+                // Access and update the corresponding spline and point directly using their IDs
+                let splineToUpdate = that.spline_group.splines['interior'].find(spline => spline.spline_id === d.spline_id);
+                console.log();
+                if (splineToUpdate) {
+                // [existing code to update spline]
+
+                // Update the path
+                let pathSelector = `path[spline_id='${splineToUpdate.spline_id}']`;
+                that.svg.select(pathSelector)
+                    .attr('d', d3.line().x(d => d.x).y(d => d.y).curve(d3.curveCatmullRom.alpha(0.5))(splineToUpdate.control_points))
+                    .attr('clip-path', `url(#${clipPathId})`);
+            }
             }
         });
 
@@ -198,7 +253,7 @@ const pointsData = [
     {points: [
         {x: 50, y: 150, fixed: true},
         {x: 150, y: 100, fixed: true},
-        {x: 250, y: 125, fixed: true},
+        {x: 250, y: 75, fixed: true},
         {x: 350, y: 100, fixed: true}
         ], boundary: true },
 
