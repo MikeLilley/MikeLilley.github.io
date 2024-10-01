@@ -9,53 +9,89 @@ title: "Curriculum Vitae"
 
 ## Experience
 
-### USS Vision, Inc.
-<p style="margin:0;"><b>Position:</b> Machine Vision Engineer</p>
-<p style="margin:0;"><b>Location:</b> Livonia, MI, USA</p>
-<p style="margin:0;"><b>Dates of Employment</b>: September 2021 - Present</p>
+### Kansas State University
+<p style="margin:0;"><b>Position:</b> Research Assistant </p>
+<p style="margin:0;"><b>Location:</b> Manhattan, KS, USA</p>
+<p style="margin:0;"><b>Dates of Employment</b>: August 2023 - Present
+<p style="margin:0;"><b>Experience:</b></p>
 <ul>
-    <li><p>Create bespoke real-time machine vision software in Python and C++ deployed on Linux devices for automatic defect detection during various manufacturing processes.</p></li>
+<li>I am contributing to the development of a logical ontology concerning enviornmental water flow and contamination in partnership with SAS and the Kansas state government in order to better address enviornmental issues which impact things such food production, as well as support policy-making decisions related to water quality standards and ecosystem preservation.</li>
+</ul>
+
+### USS Vision, Inc.
+<p style="margin:0;"><b>Position:</b> 
+<ul>
+    <li><p>Lead Machine Vision Engineer (1)</p></li>
+    <li><p>Machine Vision Engineer (2)</p></li>
+</ul>
+<p style="margin:0;"><b>Location:</b> Livonia, MI, USA</p>
+<p style="margin:0;"><b>Dates of Employment</b>: 
+<ul>
+    <li>February 2024 - July 2024 (1)</li>
+    <li>September 2021 - February 2024 (2)</li>
+</ul>
+<p style="margin:0;"><b>Experience:</b></p>
+<ul>
+    <li><p>I led the design and development of bespoke real-time vision inspection software for various manufacturing processes. Some examples include:</p></li>
     <ul style="margin:0;">
-        <li><p>Led the software development of a system that visually inspects for various types of defects in sheet metal panels. When installed on a major automotive OEM's stamping press line, defect outflow was reduced by 91.2%.</p></li>
-        <li><p>Led the software development of a real-time quality checking system for laser-engraved vehicle headlamps, defect detection performance exceeded 99%.</p></li>
-        <li><p>Participated in the creation of custom software for Matrox Iris GTX cameras, adding the capability to load in arbitrary custom ONNX model files to use for inference. </p></li>
+        <li><p><a href="https://www.ussvision.com/post/in-line-split-detection">A pioneering defect detection system</a> for inspecting complex sheet metal panels (primarily car parts) originating from a large stamping press. Originally designed for detecting splits as small as one millimeter in the metal, the system has been expanded for verifying hole presence, as well as wrinkle and galling detection.
+        <br/> With thirty GigE cameras, the system processes about sixty to ninety 12.3MP images every second, running the data through a custom-made processing pipeline which consists of both traditional signal processing algorithms as well as an ensemble of several machine learning models (vision transformers and variational autoencoders) that were developed in-house. <br/> This was a distributed system which required a significant amount of computation; the main processing engine included a multi-socket motherboard with several AMD EPYC processors, three Nvidia A100 GPUs, over 1 TB of RAM, and a 40 GiB/s NIC. This has been installed on five stamping presses belonging to various automotive OEMs with an average of a 10x reduction in outflow across all.</p></li>
+        <li><p>A thermal imaging application to detect anomalies in lithium-ion battery temperature, alerting the factory to a potential fire or explosion hazard before it occurs. This uses several thermal cameras to rapidly inspect all parts of the battery as they move into an inspection station, with surface pixel error margins below 1°C.</p></li>
+        <li><p>A quality checking system to inspect laser engravings on vehicle headlamps presented to the camera by a robotic arm. This required significant image preprocessing due to small variations within the presentation angle causing significant variation in the appearance of the engraved characters. As a result, several stages of non-linear contrast enhancement, thresholding, and morphological operations were applied based on parameters estimated from the measured intensity of the laser engravings before utilizing an OCR engine to verify the characters were correct.  </p></li>
+        <li><p>For each system, we provided web dashboards on servers that we personally maintained in order for both our team and the client to view metrics and captured images stored in databases, as well as annotation tools for automated model training and feedback.</p></li>
     </ul>
-    <li><p>Create custom machine learning architectures centered on high-performance, both in accuracy and speed. </p></li>
-    <li><p>Employ tools such as OpenCV, Scikit-Image, PyTorch, and Scikit-Learn for image processing, data analysis, machine learning, and anomaly detection.</p></li>
-    <li><p>Use Docker and Kubernetes for container orchistration, as well as ZeroMQ for inter-process and distributed communication.</p></li>
-    <li><p>Parallelize data pipelines across many CPU cores and high-bandwidth distributed systems, as well as deploy on Nvidia hardware for accelerated processing capabilities.</p></li>
-    <li><p>Deploy and manage SQL databases and web servers for KPI records.</p></li>
-    <li><p>Interface with industrial hardware such as GigE cameras and programmable logic controllers.</p></li>
-    <li><p>Serve as a technical contact for clients.</p></li>
+    <li><p>I traveled to manufacturing plants to contibute to the physical install of the systems as well as provide support and maintenance to existing systems.  </p></li>
 </ul>
 
 
 
 ### University of Michigan - Dearborn
-<p style="margin:0;"><b>Position:</b> Research Assistant (1), Tutor (2)</p>
-<p style="margin:0;"><b>Location:</b> Dearborn, MI, USA</p>
-<p style="margin:0;"><b>Dates of Employment</b>: October 2020 - December 2022 (1), March 2018 - April 2021 (2)</p>
+<p style="margin:0;"><b>Position:</b> 
 <ul>
-    <li><p>Led a project which studied the application of concepts from computational topology to the problem of facial region segmentation, with our results later being published in IEEE ISM 2022; traveled solo to and gave a talk at the conference in Naples, Italy. (1)</p></li>
-    <li><p>Used US congessional voting records to study graphical games in the context of game theory. Constructed and ran experiments to determine overall model fitness, analyzed the effects that pruning certain inputs had on the model, and determined if the behavior of a particular agent was better described by one model or another. (1)</p></li>
-    <li><p>Regularly met with other students to assist them with coursework. Tutored up to 400-level mathematics and computer science courses, as well as introductory physics. (2)</p></li>
+    <li><p>Research Assistant (1)</p></li>
+    <li><p>Tutor (2)</p></li>
+</ul>
+<p style="margin:0;"><b>Location:</b> Dearborn, MI, USA</p>
+<p style="margin:0;"><b>Dates of Employment</b>: 
+<ul>
+<li>October 2020 - December 2022 (1)</li>
+<li>March 2018 - April 2021 (2)</li>
+</ul>
+<p style="margin:0;"><b>Experience:</b></p>
+<ul>
+    <li><p>I led a project within the Affective Computing and Multimodal System Laboratory which studied the application of combining concepts from computational topology (specifically, simplicial homology) with feature descriptor algorithms such as Scale Invariant Feature Transform to the problem of facial region segmentation, with our results later being published in IEEE ISM 2022. I also traveled solo to and gave a talk at the conference in Naples, Italy.</p></li>
+    <li><p>I contibuted to research within the Learning and Uncertainty in Intelligent
+        Systems Laboratory. Using US congessional voting records, I studied graphical games 
+        in the context of game theory. I constructed and ran experiments that compared 
+        <a href="https://aaai.org/papers/7884-a-game-theoretic-approach-to-influence-in-networks/">linear influence games</a> to nonlinear influence games, analyzed the effects that pruning certain inputs had on 
+        the models, and determined if the behavior of a particular agent was better described by one model or another. Furthermore, I participated in reading groups which studied
+        novel algorithms for efficiently solving constraint satisfaction problems. </p></li>
+    <li><p>I regularly met with other students to assist them with coursework. I tutored up to 400-level mathematics and computer science courses, as well as introductory calculus-based physics. (2)</p></li>
 </ul>
 
 ### Woolf Aircraft Products, Inc.
 <p style="margin:0;"><b>Position:</b> Mechanical Drafter (Summer Internship)</p>
 <p style="margin:0;"><b>Location:</b> Romulus, MI, USA</p>
 <p style="margin:0;"><b>Dates of Employment</b>: May 2017 - August 2017</p>
+<p style="margin:0;"><b>Experience:</b></p>
 <ul>
-    <li><p>Detailed tubing layouts in AutoCAD and Autodesk Inventor.</p></li>
-    <li><p>Inspected and pressure-tested components after being fabricated.</p></li>
+    <li><p>I detailed complex tubing layouts from scratch in both 3D and 2D, generally gathering the required information by utilzing an articulated arm coordinate measuring machine as well as a variety of calipers on client-provided sample parts, with sub-millimeter tolerances required due to the parts often coming from defense contractors and aerospace OEMs.</p></li>
+    <li><p>I recieved hands-on training in AC & DC TIG welding for a variety of materials; including titanium, aluminum, and stainless steel.</p></li>
+    <li><p>I engaged in general production work, such as inspecting dimensions on newly machined parts and pressure-testing components with high PSI using helium or air within a water tank, as well as with oil.</p></li>
 </ul>
 
 ### EnviroSolutions, Inc.
 <p style="margin:0;"><b>Position:</b> Civil Drafter (Year-Long Co-Op)</p>
 <p style="margin:0;"><b>Location:</b> Westland, MI, USA</p>
 <p style="margin:0;"><b>Dates of Employment</b>: June 2016 - May 2017</p>
+<p style="margin:0;"><b>Experience:</b></p>
 <ul>
-    <li><p>Detailed contour, plume, and analytical maps in AutoCAD to convey contamination in the groundwater and soil of Superfund sites.</p></li>
+    <li><p>I detailed surface-level and underground cross-section maps which indicated pollution for several Superfund sites, such as the Enrico Fermi Nuclear Generating Station. These included: Detailed contour, plume, and analytical maps in AutoCAD to convey contamination in the groundwater and soil of Superfund sites.</p>
+    <ul>
+    <li>Water and soil contour maps to estimate particulate flow. </li>
+    <li>Plume maps to estimate the spread of carcinogenic and teratogenic compounds such as benzene, toluene, and chromium.</li>
+    </ul>
+    </li>
 </ul>
 
 ---
@@ -74,7 +110,7 @@ title: "Curriculum Vitae"
 <li><p style="margin:0;"><b>Location:</b> Dearborn, MI, USA</p></li>
 <li><p style="margin:0;"><b>Dates of Attendance</b>: September 2017 - August 2021</p></li>
 <li><p style="margin:0;"><b>GPA:</b> 3.56</p></li>
-<li><p style="margin:0;"><b>Mathematics Coursework:</b> Calculus I-III, Differential Equations, Introduction to Mathematical Proofs, Introduction to Linear Algebra, Advanced Linear Algebra, Number Theory, Cryptography, Abstract Algebra, Probability and Statistics, Topology, Numerical Analysis, Real Analysis, Differential Geometry, Algebraic Geometry</p></li>
+<li><p style="margin:0;"><b>Mathematics Coursework:</b>  Algebraic Geometry, Differential Geometry, Topology, Real Analysis, Abstract Algebra, Numerical Analysis, Probability and Statistics, Cryptography, Number Theory, Advanced Linear Algebra, Introduction to Linear Algebra, Introduction to Mathematical Proofs, Differential Equations, Calculus I-III</p></li>
 <li><p><b>Computer Science Coursework:</b> Software Engineering, Data Structures and Algorithms, Algorithm Analysis and Design, Artificial Intelligence, Computational Learning, Computer Organization and Assembly Language, Natural Language Processing, Web Technology, Operating Systems, Computer Networking and Distributed Processes, Computer Vision</p></li>
 </ul>
 
@@ -82,7 +118,7 @@ title: "Curriculum Vitae"
 
 ## Certifications
 <ul>
-    <li><p>A3 Automate - AIA Certified Vision Professional: Advanced (Granted September 2022)</p></li>
+    <li><p><a href="https://www.automate.org/vision/certified-vision-professional/cvp-advanced-professionals">A3 Automate - AIA Certified Vision Professional: Advanced </a> (<a href="https://www.automate.org/vision/certified-vision-professional/cvp-advanced-course-list">Course Guide</a>) </p></li>
 </ul>
 
 ---
@@ -90,7 +126,7 @@ title: "Curriculum Vitae"
 ## Technical Skills
 <p style="margin:0;"><b>Programming Languages:</b> 
 <ul>
-    <li>Python, C++, C, SQL, HTML/CSS, JavaScript, LaTeX, Markdown, Prolog</li>
+    <li>Python/Cython, C++, C, SQL, HTML/CSS, TypeScript/JavaScript, TSX/JSX, LaTeX, Markdown, Lean, Prolog</li>
 </ul> 
 
 <p style="margin:0;"><b>Technologies and Software Libraries:</b> 
