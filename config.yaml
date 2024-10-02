@@ -1,6 +1,6 @@
 baseURL: 'https://MikeLilley.github.io/'
 languageCode: en-us
-title: Semantic Tree
+title: Michael Lilley
 theme: PaperMod
 params:
   showShareButtons: false
@@ -13,18 +13,22 @@ params:
   homeInfoParams:
     Title: About
     Content: >
-      - My name is Michael Lilley. 
-      This website is meant to serve as a digital CV as well as a place where I can write about subjects of interest to me. I am currently employed as a machine vision engineer at [USS Vision, Inc.](https://www.ussvision.com/) in Livonia, Michigan, 
-      where we design and build bespoke real-time machine vision inspection systems for manufacturing plants.
+      - My name is Michael Lilley; this website is meant to serve as a digital CV as
+        well as a place where I can write about subjects of interest to me. I am currently a PhD student in
+        Computer Science at Kansas State University, with [Dr. Pascal Hitzler](https://people.cs.ksu.edu/~hitzler/) acting as my advisor.
+        In addition, I work in the [Data Semantics Lab](https://daselab.cs.ksu.edu/) as a graduate research assistant.
 
       -
 
-      - Furthermore, I partake in research with the [Affective Computing and Multimodal Systems Lab](https://umdearborn.edu/cecs/departments/computer-and-information-science/laboratories) 
-      at the [University of Michigan - Dearborn](https://umdearborn.edu/). I am also a graduate of this university with degrees in mathematics and computer science. Presently, I am most interested in topics surrounding neuro-symbolic AI, automated theorem proving, and computer algebra systems.
+      - Prior to this, I was employed as the lead machine vision engineer at [USS Vision, Inc.](https://www.ussvision.com/), in Livonia, Michigan, where I
+        led the design and implementation of software for bespoke real-time computer vision inspection systems for use in manufacturing plants. 
+        Furthermore, I partook in research with the [Affective Computing and Multimodal Systems Lab](https://umdearborn.edu/cecs/departments/computer-and-information-science/laboratories)
+        at the University of Michigan - Dearborn. I am also a graduate of this university with two undergraduate degrees in mathematics and computer science.
+        Presently, I am most interested in topics surrounding neuro-symbolic systems, automated theorem proving, formal methods, and computer algebra systems.
 
       -
 
-      - To contact me, please send an email to [michael.brandon.lilley@protonmail.com](michael.brandon.lilley@protonmail.com).
+      - To contact me, please email [mblilley@ksu.edu](mailto:mblilley@ksu.edu).
 
 
   math: true
