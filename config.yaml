@@ -13,7 +13,7 @@ params:
   homeInfoParams:
     Title: About
     Content: >
-      - My name is Michael Lilley; this website is meant to serve as a digital CV as
+      - This website is meant to serve as a digital CV as
         well as a place where I can write about subjects of interest to me. I am currently a PhD student in
         Computer Science at Kansas State University, with [Dr. Pascal Hitzler](https://people.cs.ksu.edu/~hitzler/) acting as my advisor.
         In addition, I work in the [Data Semantics Lab](https://daselab.cs.ksu.edu/) as a graduate research assistant.
