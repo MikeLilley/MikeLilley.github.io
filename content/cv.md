@@ -15,7 +15,7 @@ title: "Curriculum Vitae"
 <p style="margin:0;"><b>Dates of Employment</b>: August 2023 - Present
 <p style="margin:0;"><b>Experience:</b></p>
 <ul>
-<li>I am contributing to the development of a logical ontology concerning enviornmental water flow and contamination in partnership with SAS and the Kansas state government in order to better address enviornmental issues which impact things such food production, as well as support policy-making decisions related to water quality standards and ecosystem preservation.</li>
+<li>I am contributing to the development of an ontology graph concerning enviornmental water flow and contamination in partnership with SAS and the Kansas state government in order to better address enviornmental issues which impact things such food production, as well as support policy-making decisions related to water quality standards and ecosystem preservation.</li>
 </ul>
 
 ### USS Vision, Inc.
