@@ -104,9 +104,19 @@ title: "Curriculum Vitae"
 ---
 
 ## Education
+### Kansas State University
+<ul>
+<li><p style="margin:0;"><b>Program:</b> Ph.D. Computer Science</p></li>
+<li><p style="margin:0;"><b>Location:</b> Manhattan, KS, USA</p></li>
+<li><p style="margin:0;"><b>Dates of Attendance</b>: August 2024 - Present</p></li>
+<li><p style="margin:0;"><b>Advisor:</b> Dr. Pascal Hitzler</p></li>
+<li><p style="margin:0;"><b>GPA:</b> <i>N/A - Currently in First Semester</i> </p></li>
+<li><p style="margin:0;"><b>Coursework:</b>  Category Theory, Computational Complexity Theory</p></li>
+</ul>
+
 ### University of Michigan - Dearborn
 <ul>
-<li><p style="margin:0;"><b>Majors:</b> B.Sc. Computer Science and B.Sc. CIS Mathematics - Dual Degree</p></li>
+<li><p style="margin:0;"><b>Program:</b> B.Sc. Computer Science and B.Sc. CIS Mathematics - Dual Degree</p></li>
 <li><p style="margin:0;"><b>Location:</b> Dearborn, MI, USA</p></li>
 <li><p style="margin:0;"><b>Dates of Attendance</b>: September 2017 - August 2021</p></li>
 <li><p style="margin:0;"><b>GPA:</b> 3.56</p></li>
