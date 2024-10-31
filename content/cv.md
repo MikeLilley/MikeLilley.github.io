@@ -15,7 +15,7 @@ title: "Curriculum Vitae"
 <p style="margin:0;"><b>Dates of Employment</b>: August 2023 - Present
 <p style="margin:0;"><b>Experience:</b></p>
 <ul>
-<li>I am contributing to the development of an ontology graph for groundwater flow and contamination in partnership with SAS Institute, Inc. and the Kansas State Government.</li>
+<li>I am contributing to the development of an ontology graph for natural water resources in partnership with the Kansas Water Institute and SAS Institute, Inc.</li>
 </ul>
 
 ### USS Vision, Inc.
