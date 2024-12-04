@@ -40,7 +40,7 @@ title: "Curriculum Vitae"
         <li><p>A quality checking system to inspect laser engravings on vehicle headlamps presented to the camera by a robotic arm. This required significant image preprocessing due to small variations within the presentation angle causing significant variation in the appearance of the engraved characters. As a result, several stages of non-linear contrast enhancement, thresholding, and morphological operations were applied based on parameters estimated from the measured intensity of the laser engravings before utilizing an OCR engine to verify the characters were correct.  </p></li>
         <li><p>For each system, we provided web dashboards on servers that we personally maintained in order for both our team and the client to view metrics and captured images stored in databases, as well as annotation tools for automated model training and feedback.</p></li>
     </ul>
-    <li><p>I traveled to manufacturing plants to contribute to the physical install of the systems as well as provide support and maintenance to existing systems.  </p></li>
+    <li><p>I traveled to manufacturing plants to physically install the systems as well as provide support and maintenance to existing systems.  </p></li>
 </ul>
 
 
