@@ -40,7 +40,7 @@ title: "Curriculum Vitae"
         <li><p>A quality checking system to inspect laser engravings on vehicle headlamps presented to the camera by a robotic arm. This required significant image preprocessing due to small variations within the presentation angle causing significant variation in the appearance of the engraved characters. As a result, several stages of non-linear contrast enhancement, thresholding, and morphological operations were applied based on parameters estimated from the measured intensity of the laser engravings before utilizing an OCR engine to verify the characters were correct.  </p></li>
         <li><p>For each system, we provided web dashboards on servers that we personally maintained in order for both our team and the client to view metrics and captured images stored in databases, as well as annotation tools for automated model training and feedback.</p></li>
     </ul>
-    <li><p>I traveled to manufacturing plants to contibute to the physical install of the systems as well as provide support and maintenance to existing systems.  </p></li>
+    <li><p>I traveled to manufacturing plants to contribute to the physical install of the systems as well as provide support and maintenance to existing systems.  </p></li>
 </ul>
 
 
@@ -60,8 +60,8 @@ title: "Curriculum Vitae"
 <p style="margin:0;"><b>Experience:</b></p>
 <ul>
     <li><p>I led a project within the Affective Computing and Multimodal System Laboratory which studied the application of combining concepts from computational topology (specifically, simplicial homology) with feature descriptor algorithms such as Scale Invariant Feature Transform to the problem of facial region segmentation, with our results later being published in IEEE ISM 2022. I also traveled solo to and gave a talk at the conference in Naples, Italy.</p></li>
-    <li><p>I contibuted to research within the Learning and Uncertainty in Intelligent
-        Systems Laboratory. Using US congessional voting records, I studied graphical games 
+    <li><p>I contributed to research within the Learning and Uncertainty in Intelligent
+        Systems Laboratory. Using US congressional voting records, I studied graphical games 
         in the context of game theory. I constructed and ran experiments that compared 
         <a href="https://aaai.org/papers/7884-a-game-theoretic-approach-to-influence-in-networks/">linear influence games</a> to nonlinear influence games, analyzed the effects that pruning certain inputs had on 
         the models, and determined if the behavior of a particular agent was better described by one model or another. Furthermore, I participated in reading groups which studied
@@ -75,8 +75,8 @@ title: "Curriculum Vitae"
 <p style="margin:0;"><b>Dates of Employment</b>: May 2017 - August 2017</p>
 <p style="margin:0;"><b>Experience:</b></p>
 <ul>
-    <li><p>I detailed complex tubing layouts from scratch in both 3D and 2D, generally gathering the required information by utilzing an articulated arm coordinate measuring machine as well as a variety of calipers on client-provided sample parts, with sub-millimeter tolerances required due to the parts often coming from defense contractors and aerospace OEMs.</p></li>
-    <li><p>I recieved hands-on training in AC & DC TIG welding for a variety of materials; including titanium, aluminum, and stainless steel.</p></li>
+    <li><p>I detailed complex tubing layouts from scratch in both 3D and 2D, generally gathering the required information by utilizing an articulated arm coordinate measuring machine as well as a variety of calipers on client-provided sample parts, with sub-millimeter tolerances required due to the parts often coming from defense contractors and aerospace OEMs.</p></li>
+    <li><p>I received hands-on training in AC & DC TIG welding for a variety of materials; including titanium, aluminum, and stainless steel.</p></li>
     <li><p>I engaged in general production work, such as inspecting dimensions on newly machined parts and pressure-testing components with high PSI using helium or air within a water tank, as well as with oil.</p></li>
 </ul>
 
@@ -86,7 +86,7 @@ title: "Curriculum Vitae"
 <p style="margin:0;"><b>Dates of Employment</b>: June 2016 - May 2017</p>
 <p style="margin:0;"><b>Experience:</b></p>
 <ul>
-    <li><p>I detailed surface-level and underground cross-section maps which indicated pollution for several Superfund sites, such as the Enrico Fermi Nuclear Generating Station. These included: Detailed contour, plume, and analytical maps in AutoCAD to convey contamination in the groundwater and soil of Superfund sites.</p>
+    <li><p>I detailed surface-level and underground cross-section maps which indicated pollution for several Superfund sites. This included:</p>
     <ul>
     <li>Water and soil contour maps to estimate particulate flow. </li>
     <li>Plume maps to estimate the spread of carcinogenic and teratogenic compounds such as benzene, toluene, and chromium.</li>
