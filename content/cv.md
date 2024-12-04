@@ -98,7 +98,7 @@ title: "Curriculum Vitae"
 
 ## Publications
 <ul>
-    <li><p>M. Lilley, K. Das, K. Riani and M. Abouelenien, "A Topological Approach for Facial Region Segmentation in Thermal Images," 2022 IEEE International Symposium on Multimedia (ISM), Italy, 2022, pp. 189-193, doi: 10.1109/ISM55400.2022.00042.</p> <a href="https://ieeexplore.ieee.org/document/10019665">(Link)</li>
+    <li><p>M. Lilley, K. Das, K. Riani and M. Abouelenien, "<a href="https://ieeexplore.ieee.org/document/10019665">A Topological Approach for Facial Region Segmentation in Thermal Images</a>," 2022 IEEE International Symposium on Multimedia (ISM), Italy, 2022, pp. 189-193, doi: 10.1109/ISM55400.2022.00042.</p></li>
 </ul>
 
 ---
