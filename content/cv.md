@@ -110,7 +110,7 @@ title: "Curriculum Vitae"
 <li><p style="margin:0;"><b>Location:</b> Manhattan, KS, USA</p></li>
 <li><p style="margin:0;"><b>Dates of Attendance</b>: August 2024 - Present</p></li>
 <li><p style="margin:0;"><b>GPA:</b> 4.00</p></li>
-<li><p style="margin:0;"><b>Coursework:</b> Category Theory, Computational Complexity Theory, Formal Language Theory, Ontology Graph Design</p></li>
+<li><p style="margin:0;"><b>Coursework:</b> Category Theory, Computational Complexity Theory, Formal Language Theory, Semantic Ontology Graphs</p></li>
 </ul>
 
 ### University of Michigan - Dearborn
