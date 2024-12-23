@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Semantic Tree</title>
+    <title>Michael Lilley</title>
     <link>https://MikeLilley.github.io/</link>
-    <description>Recent content on Semantic Tree</description>
+    <description>Recent content on Michael Lilley</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 08 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://MikeLilley.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -49,11 +49,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://MikeLilley.github.io/cv/</guid>
-      <description>Experience USS Vision, Inc. Position: Machine Vision Engineer
+      <description>Experience Kansas State University Position: Research Assistant Location: Manhattan, KS, USA
+Dates of Employment: August 2023 - Present Experience:
+I am contributing to the development of an ontology graph for natural water resources in partnership with the Kansas Water Institute and SAS Institute, Inc. USS Vision, Inc. Position: Lead Machine Vision Engineer (1)
+Machine Vision Engineer (2)
 Location: Livonia, MI, USA
-Dates of Employment: September 2021 - Present
-Create bespoke real-time machine vision software in Python and C++ deployed on Linux devices for automatic defect detection during various manufacturing processes.
-Led the software development of a system that visually inspects for various types of defects in sheet metal panels. When installed on a major automotive OEM&#39;s stamping press line, defect outflow was reduced by 91.</description>
+Dates of Employment: February 2024 - July 2024 (1) September 2021 - February 2024 (2) Experience:</description>
     </item>
     
     
