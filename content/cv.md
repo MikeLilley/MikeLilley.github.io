@@ -86,7 +86,7 @@ title: "Curriculum Vitae"
 <p style="margin:0;"><b>Dates of Employment</b>: June 2016 - May 2017</p>
 <p style="margin:0;"><b>Experience:</b></p>
 <ul>
-    <li><p>I detailed surface-level and underground cross-section maps which indicated pollution for several Superfund sites. This included:</p>
+    <li><p>I detailed surface-level and underground cross-section maps which indicated pollution for several Superfund sites, such as the Enrico Fermi Nuclear Generating Station. This included:</p>
     <ul>
     <li>Water and soil contour maps to estimate particulate flow. </li>
     <li>Plume maps to estimate the spread of carcinogenic and teratogenic compounds such as benzene, toluene, and chromium.</li>
