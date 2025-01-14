@@ -42,7 +42,7 @@ params:
     url: "https://github.com/MikeLilley"
   - name: linkedin
     title: LinkedIn
-    url: "https://www.linkedin.com/in/michael-lilley-303936163/"
+    url: "https://www.linkedin.com/in/mblilley/"
 
   fuseOpts:
         isCaseSensitive: false
