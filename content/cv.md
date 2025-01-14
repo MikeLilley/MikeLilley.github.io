@@ -59,7 +59,7 @@ title: "Curriculum Vitae"
 </ul>
 <p style="margin:0;"><b>Experience:</b></p>
 <ul>
-    <li><p>I led a project within the Affective Computing and Multimodal System Laboratory which studied the application of combining concepts from computational topology (specifically, simplicial homology) with feature descriptor algorithms such as Scale Invariant Feature Transform to the problem of facial region segmentation, with our results later being published in IEEE ISM 2022. I also traveled solo to and gave a talk at the conference in Naples, Italy.</p></li>
+    <li><p>I led a project within the Affective Computing and Multimodal System Laboratory which studied the application methods from computational topology (specifically, simplicial homology) with feature descriptor algorithms such as Scale Invariant Feature Transform to the problem of facial region segmentation, with our results later being published in IEEE ISM 2022. I also traveled solo to and gave a talk at the conference in Naples, Italy.</p></li>
     <li><p>I contributed to research within the Learning and Uncertainty in Intelligent
         Systems Laboratory. Using US congressional voting records, I studied graphical games 
         in the context of game theory. I constructed and ran experiments that compared 
